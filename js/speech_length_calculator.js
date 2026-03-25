@@ -101,7 +101,7 @@ app.registerExtension({
                     const wordCount = words.length;
 
                     if (wordCount === 0 && additionalTime === 0) {
-                        statsWidget.value = `Spoken Words: 0\nAdditional Time: 0s\nWPM = Words Per Minute\n(No text inside quotes found)\n(Wrap spoken text in "quotes" to calculate)`;
+                        statsWidget.value = `Spoken Words: 0\nAdditional Time: 0s\nWPM = Words Per Minute\n(No text inside quotes found.)\n(Wrap spoken text in "quotes" to calculate)`;
                         return;
                     }
 
@@ -129,7 +129,7 @@ app.registerExtension({
 Additional Time: ${additionalTime}s
 WPM = Words Per Minute
 --------------------------------------------
-Speech Speed     Time       Frames
+Speech Speed     Length     Frames
 Slow (100 WPM)   ${slow.time.padEnd(10)} ${slow.frames}
 Avg  (130 WPM)   ${avg.time.padEnd(10)} ${avg.frames}
 Fast (160 WPM)   ${fast.time.padEnd(10)} ${fast.frames}`;
