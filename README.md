@@ -68,7 +68,7 @@ It also has a sync feature that syncs all LTX Keyframer nodes together in realti
 
 A node that calculates in realtime how long a video will be based on the dialouge. Any words in quotations will be considered as speech. The node updates in realtime without having to run the workflow, and outputs the length in frames depending how fast the speech is.
 
-If you connect another string/text node to the text_input, it will still update in realtime the length.
+If you connect another string/text node to the text_input, it will still update the length in realtime.
 
 # 💡 Workflows
 <img width="3120" height="990" alt="LTX I2V First Last Frame 3 Stage Workflow v6" src="https://github.com/user-attachments/assets/c993ef2f-ac4b-4091-a7f6-5ff1674c3718" />
