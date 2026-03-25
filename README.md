@@ -6,7 +6,7 @@ Hopefully it will make creating cool stuff easier.
 
 All of my nodes are created with the help of AI, so there may or may not be redundant, messy code.
 
-## ▶️ YouTube Video 
+## ▶️ YouTube Tutorial Video 
 
 [![Overview Video](https://img.youtube.com/vi/aXDIr8eNovI/0.jpg)](https://www.youtube.com/watch?v=aXDIr8eNovI)
 
@@ -26,6 +26,8 @@ All of my nodes are created with the help of AI, so there may or may not be redu
   * more things i can't rememeber
 
 **This update will change the node layouts, so be sure to update your workflows or else they won't work properly.**
+
+❗❗❗ **New Tutorial on using these nodes available: https://www.youtube.com/watch?v=aXDIr8eNovI**  ❗❗❗
 
 # ⚙️ Custom Nodes
 
