@@ -17,7 +17,7 @@ class MultiImageLoader:
                 "height": ("INT", {"default": 0, "min": 0, "max": 8192, "step": 1}),
                 "interpolation": (["lanczos", "nearest", "bilinear", "bicubic", "area", "nearest-exact"],),
                 "resize_method": (["keep proportion", "stretch", "pad", "crop"],),
-                "multiple_of": ("INT", {"default": 0, "min": 0, "max": 512, "step": 1}),
+                "multiple_of": ("INT", {"default": 32, "min": 0, "max": 512, "step": 1}),
                 "img_compression": ("INT", {"default": 18, "min": 0, "max": 100, "step": 1}),
             },
         }
@@ -26,7 +26,7 @@ class MultiImageLoader:
     RETURN_TYPES = ("IMAGE",) * 51
     RETURN_NAMES = ("multi_output",) + tuple(f"image_{i+1}" for i in range(50))
     FUNCTION = "load_images"
-    CATEGORY = "image"
+    CATEGORY = "WhatDreamsCost"
 
     def resize_image(self, image, width, height, resize_method="keep proportion", interpolation="nearest", multiple_of=0):
         MAX_RESOLUTION = 8192

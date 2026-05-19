@@ -15,10 +15,12 @@ class SpeechLengthCalculator:
             }
         }
 
-    RETURN_TYPES = ("INT", "INT", "INT")
-    RETURN_NAMES = ("slow_frame_count", "average_frame_count", "fast_frame_count")
+    # Added "STRING" to RETURN_TYPES
+    RETURN_TYPES = ("INT", "INT", "INT", "STRING")
+    # Added "text" to RETURN_NAMES
+    RETURN_NAMES = ("slow_frame_count", "average_frame_count", "fast_frame_count", "text")
     FUNCTION = "calculate_speech"
-    CATEGORY = "text/speech"
+    CATEGORY = "WhatDreamsCost"
 
     def calculate_speech(self, text, fps, additional_time=0.0, text_input=None):
         # Prioritize the connected text_input if provided, otherwise fallback to the text widget
@@ -45,4 +47,5 @@ class SpeechLengthCalculator:
         avg_frames = calc_frames(130)
         fast_frames = calc_frames(160)
 
-        return (slow_frames, avg_frames, fast_frames)
+        # Added active_text as the 4th returned value
+        return (slow_frames, avg_frames, fast_frames, active_text)
