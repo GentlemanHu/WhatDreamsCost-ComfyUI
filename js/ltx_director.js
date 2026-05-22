@@ -3703,14 +3703,14 @@ class TimelineEditor {
 
         if (playDurationSec <= 0) continue;
 
-        const source = this.audioContext.createBufferSource();
-        source.buffer = audioBuffer;
-        source.connect(this.audioContext.destination);
+        const bufferNode = this.audioContext.createBufferSource();
+        bufferNode.buffer = audioBuffer;
+        bufferNode["connect"](this.audioContext.destination);
 
         const startTime = this.audioContext.currentTime + waitTimeSec;
-        source.start(startTime, fileOffsetSec, playDurationSec);
+        bufferNode.start(startTime, fileOffsetSec, playDurationSec);
 
-        this.activeAudioNodes.push(source);
+        this.activeAudioNodes.push(bufferNode);
       } catch (err) {
         console.error("Playback decode error for segment:", err);
       }
