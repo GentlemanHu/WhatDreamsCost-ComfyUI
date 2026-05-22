@@ -704,7 +704,7 @@ class TimelineEditor {
     }
 
     // Polling is much more reliable in Comfy than ResizeObserver due to scale transforms
-    this._renderLoop = requestAnimationFrame(this.checkResize.bind(this));
+    this._renderLoop = requestAnimationFrame(() => this.checkResize());
   }
 
   destroy() {
@@ -1014,8 +1014,8 @@ class TimelineEditor {
 
     this.viewport.appendChild(this.canvas);
 
-    this.canvas.addEventListener("mousedown", this.onMouseDown.bind(this));
-    this.canvas.addEventListener("contextmenu", this.onContextMenu.bind(this));
+    this.canvas.addEventListener("mousedown", (e) => this.onMouseDown(e));
+    this.canvas.addEventListener("contextmenu", (e) => this.onContextMenu(e));
     this.canvas.style.height = `${CANVAS_HEIGHT}px`;
 
     // --- Content Area Container ---
@@ -1139,8 +1139,8 @@ class TimelineEditor {
       }
     });
 
-    window.addEventListener("mousemove", this.onMouseMove.bind(this));
-    window.addEventListener("mouseup", this.onMouseUp.bind(this));
+    window.addEventListener("mousemove", (e) => this.onMouseMove(e));
+    window.addEventListener("mouseup", (e) => this.onMouseUp(e));
 
     // --- Player Controls ---
     const playerControls = document.createElement("div");
@@ -1370,7 +1370,7 @@ class TimelineEditor {
       this.canvas.style.width = newCanvasWidth + "px";
       this.resizeCanvas(newCanvasWidth);
     }
-    this._renderLoop = requestAnimationFrame(this.checkResize.bind(this));
+    this._renderLoop = requestAnimationFrame(() => this.checkResize());
   }
 
   getRenderScale() {
