@@ -290,7 +290,7 @@ class LTXDirectorGuide:
                 "model": ("MODEL", {"tooltip": "Connect model if using IC-LoRA for motion guidance."}),
                 "ic_lora_name": (["None"] + loras, {"default": "None", "tooltip": "Select the IC-LoRA model to use for motion guidance."}),
                 "ic_lora_strength": ("FLOAT", {"default": 1.0, "min": -100.0, "max": 100.0, "step": 0.01}),
-                "scale_by": ("FLOAT", {"default": 0.5, "min": 0.01, "max": 8.0, "step": 0.01, "tooltip": "Scale the latent by this factor. 0.5 is recommended for IC-LoRA."}),
+                "scale_by": ("FLOAT", {"default": 1.0, "min": 0.01, "max": 8.0, "step": 0.01, "tooltip": "Scale the latent by this factor."}),
                 "upscale_method": (["nearest-exact", "bilinear", "area", "bicubic", "bislerp"], {"default": "bicubic", "tooltip": "Method used to upscale/downscale the latent."}),
                 "image_attention_strength": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 1.0, "step": 0.01}),
                 "crop": (["disabled", "center"], {"default": "center"}),

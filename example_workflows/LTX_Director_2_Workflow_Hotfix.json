@@ -1,8 +1,8 @@
 {
   "id": "90b6d2bc-24e3-4235-8edf-1ed7c69702ab",
   "revision": 0,
-  "last_node_id": 131,
-  "last_link_id": 1064,
+  "last_node_id": 133,
+  "last_link_id": 1092,
   "nodes": [
     {
       "id": 55,
@@ -22,12 +22,12 @@
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 732
+          "link": 1087
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": 734
+          "link": 1089
         },
         {
           "name": "latent",
@@ -40,14 +40,14 @@
           "name": "positive",
           "type": "CONDITIONING",
           "links": [
-            740
+            1065
           ]
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
           "links": [
-            741
+            1066
           ]
         },
         {
@@ -59,9 +59,9 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "LTXDirectorCropGuides",
         "cnr_id": "whatdreamscost-comfyui",
-        "ver": "1.3.9"
+        "ver": "1.3.9",
+        "Node name for S&R": "LTXDirectorCropGuides"
       },
       "widgets_values": [],
       "color": "#222",
@@ -85,7 +85,7 @@
         {
           "name": "video_latent",
           "type": "LATENT",
-          "link": 753
+          "link": 1076
         },
         {
           "name": "audio_latent",
@@ -178,7 +178,7 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 754
+          "link": 1077
         }
       ],
       "outputs": [
@@ -274,7 +274,7 @@
           "name": "LATENT",
           "type": "LATENT",
           "links": [
-            743
+            1068
           ]
         }
       ],
@@ -333,14 +333,14 @@
           "name": "positive",
           "type": "CONDITIONING",
           "links": [
-            724
+            1079
           ]
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
           "links": [
-            725
+            1080
           ]
         }
       ],
@@ -419,17 +419,17 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 1026
+          "link": 1092
         },
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 731
+          "link": 1086
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": 733
+          "link": 1088
         }
       ],
       "outputs": [
@@ -477,7 +477,7 @@
         {
           "name": "video_latent",
           "type": "LATENT",
-          "link": 737
+          "link": 1090
         },
         {
           "name": "audio_latent",
@@ -563,7 +563,7 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 738
+          "link": 1091
         }
       ],
       "outputs": [
@@ -778,17 +778,17 @@
         {
           "name": "model",
           "type": "MODEL",
-          "link": 1027
+          "link": 1078
         },
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 747
+          "link": 1072
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": 749
+          "link": 1074
         }
       ],
       "outputs": [
@@ -882,12 +882,12 @@
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 748
+          "link": 1073
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": 750
+          "link": 1075
         },
         {
           "name": "latent",
@@ -915,9 +915,9 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "LTXDirectorCropGuides",
         "cnr_id": "whatdreamscost-comfyui",
-        "ver": "1.3.9"
+        "ver": "1.3.9",
+        "Node name for S&R": "LTXDirectorCropGuides"
       },
       "widgets_values": [],
       "color": "#222",
@@ -1333,8 +1333,8 @@
           "links": [
             2,
             17,
-            726,
-            742
+            1067,
+            1081
           ]
         }
       ],
@@ -1345,116 +1345,6 @@
       },
       "widgets_values": [
         "LTX23_video_vae_bf16.safetensors"
-      ],
-      "color": "#222",
-      "bgcolor": "#000"
-    },
-    {
-      "id": 108,
-      "type": "LTXDirectorGuide",
-      "pos": [
-        9030,
-        -380
-      ],
-      "size": [
-        400,
-        400
-      ],
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 724
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 725
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 726
-        },
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "link": 1057
-        },
-        {
-          "name": "guide_data",
-          "type": "GUIDE_DATA",
-          "link": 1059
-        },
-        {
-          "name": "motion_guide_data",
-          "shape": 7,
-          "type": "MOTION_GUIDE_DATA",
-          "link": 1061
-        },
-        {
-          "name": "model",
-          "shape": 7,
-          "type": "MODEL",
-          "link": 1053
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            731,
-            732
-          ]
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            733,
-            734
-          ]
-        },
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": [
-            737
-          ]
-        },
-        {
-          "name": "model",
-          "type": "MODEL",
-          "links": [
-            738,
-            1026
-          ]
-        },
-        {
-          "name": "latent_downscale_factor",
-          "type": "FLOAT",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LTXDirectorGuide"
-      },
-      "widgets_values": [
-        "None",
-        1,
-        0.5,
-        "bicubic",
-        1,
-        "center",
-        true,
-        false,
-        256,
-        64,
-        false
       ],
       "color": "#222",
       "bgcolor": "#000"
@@ -1561,8 +1451,8 @@
           "name": "model",
           "type": "MODEL",
           "links": [
-            1053,
-            1054
+            1071,
+            1085
           ]
         },
         {
@@ -1577,7 +1467,7 @@
           "name": "video_latent",
           "type": "LATENT",
           "links": [
-            1057
+            1082
           ]
         },
         {
@@ -1591,16 +1481,16 @@
           "name": "guide_data",
           "type": "GUIDE_DATA",
           "links": [
-            1059,
-            1060
+            1069,
+            1083
           ]
         },
         {
           "name": "motion_guide_data",
           "type": "MOTION_GUIDE_DATA",
           "links": [
-            1061,
-            1062
+            1070,
+            1084
           ]
         },
         {
@@ -1618,6 +1508,8 @@
         }
       ],
       "properties": {
+        "cnr_id": "whatdreamscost-comfyui",
+        "ver": "2.0.0",
         "Node name for S&R": "LTXDirector",
         "global_prompt": "",
         "mainTrackEnabled": true,
@@ -1681,116 +1573,6 @@
       ]
     },
     {
-      "id": 109,
-      "type": "LTXDirectorGuide",
-      "pos": [
-        9030,
-        -930
-      ],
-      "size": [
-        400,
-        400
-      ],
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 740
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 741
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 742
-        },
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "link": 743
-        },
-        {
-          "name": "guide_data",
-          "type": "GUIDE_DATA",
-          "link": 1060
-        },
-        {
-          "name": "motion_guide_data",
-          "shape": 7,
-          "type": "MOTION_GUIDE_DATA",
-          "link": 1062
-        },
-        {
-          "name": "model",
-          "shape": 7,
-          "type": "MODEL",
-          "link": 1054
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": [
-            747,
-            748
-          ]
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": [
-            749,
-            750
-          ]
-        },
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": [
-            753
-          ]
-        },
-        {
-          "name": "model",
-          "type": "MODEL",
-          "links": [
-            754,
-            1027
-          ]
-        },
-        {
-          "name": "latent_downscale_factor",
-          "type": "FLOAT",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LTXDirectorGuide"
-      },
-      "widgets_values": [
-        "None",
-        1,
-        1,
-        "bicubic",
-        1,
-        "center",
-        true,
-        false,
-        256,
-        64,
-        false
-      ],
-      "color": "#222",
-      "bgcolor": "#000"
-    },
-    {
       "id": 130,
       "type": "MarkdownNote",
       "pos": [
@@ -1813,6 +1595,230 @@
       ],
       "color": "#322",
       "bgcolor": "#533"
+    },
+    {
+      "id": 132,
+      "type": "LTXDirectorGuide",
+      "pos": [
+        9030,
+        -930
+      ],
+      "size": [
+        400,
+        400
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 1065
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 1066
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 1067
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "link": 1068
+        },
+        {
+          "name": "guide_data",
+          "type": "GUIDE_DATA",
+          "link": 1069
+        },
+        {
+          "name": "motion_guide_data",
+          "shape": 7,
+          "type": "MOTION_GUIDE_DATA",
+          "link": 1070
+        },
+        {
+          "name": "model",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 1071
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            1072,
+            1073
+          ]
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            1074,
+            1075
+          ]
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": [
+            1076
+          ]
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            1077,
+            1078
+          ]
+        },
+        {
+          "name": "latent_downscale_factor",
+          "type": "FLOAT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "whatdreamscost-comfyui",
+        "ver": "2.0.0",
+        "Node name for S&R": "LTXDirectorGuide"
+      },
+      "widgets_values": [
+        "None",
+        1,
+        1,
+        "bicubic",
+        1,
+        "center",
+        true,
+        false,
+        256,
+        64,
+        false
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 133,
+      "type": "LTXDirectorGuide",
+      "pos": [
+        9030,
+        -380
+      ],
+      "size": [
+        400,
+        400
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 1079
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 1080
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 1081
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "link": 1082
+        },
+        {
+          "name": "guide_data",
+          "type": "GUIDE_DATA",
+          "link": 1083
+        },
+        {
+          "name": "motion_guide_data",
+          "shape": 7,
+          "type": "MOTION_GUIDE_DATA",
+          "link": 1084
+        },
+        {
+          "name": "model",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 1085
+        }
+      ],
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            1086,
+            1087
+          ]
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [
+            1088,
+            1089
+          ]
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": [
+            1090
+          ]
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            1091,
+            1092
+          ]
+        },
+        {
+          "name": "latent_downscale_factor",
+          "type": "FLOAT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "whatdreamscost-comfyui",
+        "ver": "2.0.0",
+        "Node name for S&R": "LTXDirectorGuide"
+      },
+      "widgets_values": [
+        "None",
+        1,
+        0.5,
+        "bicubic",
+        1,
+        "center",
+        true,
+        false,
+        256,
+        64,
+        false
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
     }
   ],
   "links": [
@@ -2025,174 +2031,6 @@
       "LATENT"
     ],
     [
-      724,
-      27,
-      0,
-      108,
-      0,
-      "CONDITIONING"
-    ],
-    [
-      725,
-      27,
-      1,
-      108,
-      1,
-      "CONDITIONING"
-    ],
-    [
-      726,
-      36,
-      0,
-      108,
-      2,
-      "VAE"
-    ],
-    [
-      731,
-      108,
-      0,
-      28,
-      1,
-      "CONDITIONING"
-    ],
-    [
-      732,
-      108,
-      0,
-      55,
-      0,
-      "CONDITIONING"
-    ],
-    [
-      733,
-      108,
-      1,
-      28,
-      2,
-      "CONDITIONING"
-    ],
-    [
-      734,
-      108,
-      1,
-      55,
-      1,
-      "CONDITIONING"
-    ],
-    [
-      737,
-      108,
-      2,
-      29,
-      0,
-      "LATENT"
-    ],
-    [
-      738,
-      108,
-      3,
-      33,
-      0,
-      "MODEL"
-    ],
-    [
-      740,
-      55,
-      0,
-      109,
-      0,
-      "CONDITIONING"
-    ],
-    [
-      741,
-      55,
-      1,
-      109,
-      1,
-      "CONDITIONING"
-    ],
-    [
-      742,
-      36,
-      0,
-      109,
-      2,
-      "VAE"
-    ],
-    [
-      743,
-      14,
-      0,
-      109,
-      3,
-      "LATENT"
-    ],
-    [
-      747,
-      109,
-      0,
-      17,
-      1,
-      "CONDITIONING"
-    ],
-    [
-      748,
-      109,
-      0,
-      54,
-      0,
-      "CONDITIONING"
-    ],
-    [
-      749,
-      109,
-      1,
-      17,
-      2,
-      "CONDITIONING"
-    ],
-    [
-      750,
-      109,
-      1,
-      54,
-      1,
-      "CONDITIONING"
-    ],
-    [
-      753,
-      109,
-      2,
-      18,
-      0,
-      "LATENT"
-    ],
-    [
-      754,
-      109,
-      3,
-      21,
-      0,
-      "MODEL"
-    ],
-    [
-      1026,
-      108,
-      3,
-      28,
-      0,
-      "MODEL"
-    ],
-    [
-      1027,
-      109,
-      3,
-      17,
-      0,
-      "MODEL"
-    ],
-    [
       1032,
       35,
       0,
@@ -2233,22 +2071,6 @@
       "VAE"
     ],
     [
-      1053,
-      131,
-      0,
-      108,
-      6,
-      "MODEL"
-    ],
-    [
-      1054,
-      131,
-      0,
-      109,
-      6,
-      "MODEL"
-    ],
-    [
       1055,
       131,
       1,
@@ -2265,52 +2087,12 @@
       "CONDITIONING"
     ],
     [
-      1057,
-      131,
-      2,
-      108,
-      3,
-      "LATENT"
-    ],
-    [
       1058,
       131,
       3,
       29,
       1,
       "LATENT"
-    ],
-    [
-      1059,
-      131,
-      4,
-      108,
-      4,
-      "GUIDE_DATA"
-    ],
-    [
-      1060,
-      131,
-      4,
-      109,
-      4,
-      "GUIDE_DATA"
-    ],
-    [
-      1061,
-      131,
-      5,
-      108,
-      5,
-      "MOTION_GUIDE_DATA"
-    ],
-    [
-      1062,
-      131,
-      5,
-      109,
-      5,
-      "MOTION_GUIDE_DATA"
     ],
     [
       1063,
@@ -2327,6 +2109,230 @@
       2,
       2,
       "FLOAT"
+    ],
+    [
+      1065,
+      55,
+      0,
+      132,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      1066,
+      55,
+      1,
+      132,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      1067,
+      36,
+      0,
+      132,
+      2,
+      "VAE"
+    ],
+    [
+      1068,
+      14,
+      0,
+      132,
+      3,
+      "LATENT"
+    ],
+    [
+      1069,
+      131,
+      4,
+      132,
+      4,
+      "GUIDE_DATA"
+    ],
+    [
+      1070,
+      131,
+      5,
+      132,
+      5,
+      "MOTION_GUIDE_DATA"
+    ],
+    [
+      1071,
+      131,
+      0,
+      132,
+      6,
+      "MODEL"
+    ],
+    [
+      1072,
+      132,
+      0,
+      17,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      1073,
+      132,
+      0,
+      54,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      1074,
+      132,
+      1,
+      17,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      1075,
+      132,
+      1,
+      54,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      1076,
+      132,
+      2,
+      18,
+      0,
+      "LATENT"
+    ],
+    [
+      1077,
+      132,
+      3,
+      21,
+      0,
+      "MODEL"
+    ],
+    [
+      1078,
+      132,
+      3,
+      17,
+      0,
+      "MODEL"
+    ],
+    [
+      1079,
+      27,
+      0,
+      133,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      1080,
+      27,
+      1,
+      133,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      1081,
+      36,
+      0,
+      133,
+      2,
+      "VAE"
+    ],
+    [
+      1082,
+      131,
+      2,
+      133,
+      3,
+      "LATENT"
+    ],
+    [
+      1083,
+      131,
+      4,
+      133,
+      4,
+      "GUIDE_DATA"
+    ],
+    [
+      1084,
+      131,
+      5,
+      133,
+      5,
+      "MOTION_GUIDE_DATA"
+    ],
+    [
+      1085,
+      131,
+      0,
+      133,
+      6,
+      "MODEL"
+    ],
+    [
+      1086,
+      133,
+      0,
+      28,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      1087,
+      133,
+      0,
+      55,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      1088,
+      133,
+      1,
+      28,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      1089,
+      133,
+      1,
+      55,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      1090,
+      133,
+      2,
+      29,
+      0,
+      "LATENT"
+    ],
+    [
+      1091,
+      133,
+      3,
+      33,
+      0,
+      "MODEL"
+    ],
+    [
+      1092,
+      133,
+      3,
+      28,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
@@ -2382,10 +2388,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.656641045325441,
+      "scale": 0.44849466930226173,
       "offset": [
-        -5752.001248544069,
-        1412.4822423118853
+        -7475.424668003716,
+        1384.206175110272
       ]
     },
     "frontendVersion": "1.45.15",
